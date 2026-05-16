@@ -1,0 +1,182 @@
+/* ==================================================
+        STYLE DESAIN SISTEM ABSENSI
+        DIBUAT OLEH: FAHRIL PROJECT
+        TAHUN: 2026
+        SEMUA KODE DESAIN ADALAH KARYA ASLI
+    ================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    min-height: 100vh;
+    color: #ffffff;
+    padding: 30px 20px;
+    line-height: 1.6;
+}
+
+header {
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px 30px;
+    border-left: 4px solid #ffd700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.judul h1 {
+    color: #ffd700;
+    font-size: 26px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    line-height: 1;
+}
+
+.judul small {
+    font-size: 11px;
+    color: #ffd700;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #ffd700;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.login-btn {
+    background: linear-gradient(135deg, #ffd700, #ffb700);
+    color: #000 !important;
+    font-weight: bold !important;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    color: #ffd700;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+p {
+    margin-bottom: 12px;
+    color: #dddddd;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 28px;
+    margin: 15px 10px 15px 0;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+button:nth-child(1) {
+    background: #ffd700;
+    color: #000;
+}
+
+button:nth-child(1):hover {
+    background: #ffb700;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(255, 215, 0, 0.3);
+}
+
+button:nth-child(2) {
+    background: transparent;
+    color: #ffd700;
+    border: 2px solid #ffd700;
+}
+
+button:nth-child(2):hover {
+    background: rgba(255, 215, 0, 0.1);
+}
+
+.gambar-tengah {
+    margin-top: 20px;
+    text-align: center;
+}
+
+img {
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.tanda-pengembang {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.tanda-pengembang h3 {
+    color: #ffd700;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.tanda-pengembang p {
+    font-size: 12px;
+    margin: 0;
+    color: #aaa;
+}
+
+.tanda-pengembang small {
+    font-size: 10px;
+    color: #777;
+}
+
+/* RESPONSIF BUATAN FAHRIL */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    main {
+        padding: 20px;
+    }
+}
